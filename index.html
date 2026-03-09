@@ -8,23 +8,36 @@
 </head>
 <body>
     <header class="pageheader">
-        <a href="/index.html">
-        <img src="/images/colored-logo.svg" alt="EnterpriseHub logo"></a>
+    <!-- 1. Logo à gauche -->
+    <a href="/index.html">
+        <img src="/images/colored-logo.svg" alt="EnterpriseHub logo">
+    </a>
+
+    <!-- 2. Searchbar au centre -->
+    <div class="searchbar">
+        <input type="text" placeholder="Search for a business...">
+        <button>Search</button>
+    </div>
+
+    <!-- 3. Boutons à droite -->
     <div class="rightbuttons">
         <button>Login</button>
         <button>Sign Up</button>
-    </div>  
-    <div class="searchbar">
-    <input type="text" placeholder="Search for a business...">
-    <button>Search</button>
     </div>
-    </header>
+</header>
     <main>
         <section id="enterprise-list">
-            <!--Enperprise listed here-->
+            <div class="card">
+                    <h2>B12 Burger Terrebonne</h2>
+                    <p>Terrebonne</p>
+                    <p>Restaurant</p>
+                    <p>4.5</p>
+                    <p>Burger Place</p>
+                    <button>View Profile</button>
+</div>
+            </div>
         </section>
     </main>
-
     <script src="/js/data.js"></script>
 </body>
 </html>

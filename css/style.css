@@ -1,0 +1,130 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.pageheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    height: 125px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Logo */
+.pageheader img {
+    height: 125px;
+    cursor: pointer;
+    margin-left: 80px;
+}
+
+/* Searchbar */
+.searchbar {
+    display: flex;
+    align-items: center;
+    background-color: #f0f2f5;
+    border-radius: 20px;
+    padding: 8px 15px;
+    width: 400px;
+}
+
+.searchbar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+}
+
+.searchbar button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #1877f2;
+    font-weight: bold;
+}
+
+.searchbar button:hover {
+    color: #0d5db5;
+}
+
+/* Boutons Login / Sign Up */
+.rightbuttons {
+    display: flex;
+    gap: 10px;
+}
+
+.rightbuttons button {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.rightbuttons button:first-child {
+    background-color: #f0f2f5;
+    color: #000000;
+}
+
+.rightbuttons button:first-child:hover {
+    background-color: #e0e2e5;
+}
+
+.rightbuttons button:last-child {
+    background-color: #1877f2;
+    color: #ffffff;
+}
+
+.rightbuttons button:last-child:hover {
+    background-color: #0d5db5;
+}
+
+#enterprise-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+.card button {
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card button:hover {
+    background-color: #0d5db5;
+}
