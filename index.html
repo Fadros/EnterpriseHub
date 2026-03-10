@@ -4,40 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EnterpriseHub</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <header class="pageheader">
-    <!-- 1. Logo à gauche -->
-    <a href="/index.html">
-        <img src="/images/colored-logo.svg" alt="EnterpriseHub logo">
-    </a>
+        <a href="index.html" class="logo-link">
+            <img src="images/colored-logo.svg" alt="EnterpriseHub logo">
+        </a>
 
-    <!-- 2. Searchbar au centre -->
-    <div class="searchbar">
-        <input type="text" placeholder="Search for a business...">
-        <button>Search</button>
-    </div>
+        <div class="searchbar">
+            <input id="search-input" type="text" placeholder="Search by business, city, or category">
+            <button id="search-button" type="button">Search</button>
+        </div>
 
-    <!-- 3. Boutons à droite -->
-    <div class="rightbuttons">
-        <button>Login</button>
-        <button>Sign Up</button>
-    </div>
-</header>
+        <div class="rightbuttons">
+            <button type="button">Login</button>
+            <button type="button">Sign Up</button>
+        </div>
+    </header>
+
     <main>
-        <section id="enterprise-list">
-            <div class="card">
-                    <h2>B12 Burger Terrebonne</h2>
-                    <p>Terrebonne</p>
-                    <p>Restaurant</p>
-                    <p>4.5</p>
-                    <p>Burger Place</p>
-                    <button>View Profile</button>
-</div>
+        <section class="hero">
+            <div class="hero-text">
+                <p class="eyebrow">Local directory</p>
+                <h1>Find trusted businesses faster</h1>
+                <p class="hero-description">
+                    Browse a larger list of enterprises, filter them with search, and compare ratings at a glance.
+                </p>
+            </div>
+
+            <div class="hero-summary">
+                <p class="summary-label">Results shown</p>
+                <p id="results-count" class="summary-value">0 enterprises</p>
+                <p class="summary-note">Updated live when you search.</p>
             </div>
         </section>
+
+        <section id="enterprise-list" class="enterprise-grid" aria-live="polite"></section>
     </main>
-    <script src="/js/data.js"></script>
+
+    <script src="js/data.js"></script>
 </body>
 </html>
