@@ -6,15 +6,15 @@
 }
 
 :root {
-    --page-background: #f4efe6;
-    --surface: #fffdf8;
+    --page-background: #f4f6fb;
+    --surface: #ffffff;
     --surface-strong: #ffffff;
     --text-main: #1f2933;
     --text-soft: #52606d;
-    --line: #e4d9c9;
-    --accent: #1f6f5f;
-    --accent-dark: #154f44;
-    --accent-soft: #dff3ec;
+    --line: #dbe3f3;
+    --accent: #1877f2;
+    --accent-dark: #0d5db5;
+    --accent-soft: #e7f0ff;
     --shadow: 0 18px 35px rgba(31, 41, 51, 0.08);
     --radius-large: 24px;
     --radius-medium: 18px;
@@ -26,8 +26,8 @@ body {
     min-height: 100vh;
     font-family: Arial, sans-serif;
     background:
-        radial-gradient(circle at top left, rgba(31, 111, 95, 0.12), transparent 30%),
-        linear-gradient(180deg, #fbf8f2 0%, var(--page-background) 100%);
+        radial-gradient(circle at top left, rgba(24, 119, 242, 0.16), transparent 35%),
+        linear-gradient(180deg, #ffffff 0%, var(--page-background) 100%);
     color: var(--text-main);
 }
 
@@ -46,7 +46,7 @@ body {
 }
 
 .pageheader img {
-    height: 100px;
+    height: 110px;
     cursor: pointer;
 }
 
@@ -107,7 +107,7 @@ body {
 }
 
 .rightbuttons button:first-child:hover {
-    background-color: #f4f0e8;
+    background-color: #f0f4ff;
 }
 
 .rightbuttons button:last-child {
@@ -135,8 +135,8 @@ main {
 
 .hero-text,
 .hero-summary {
-    background: rgba(255, 253, 248, 0.88);
-    border: 1px solid rgba(228, 217, 201, 0.95);
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(219, 227, 243, 0.95);
     border-radius: var(--radius-large);
     padding: 28px;
     box-shadow: var(--shadow);
@@ -156,7 +156,7 @@ main {
 }
 
 .hero h1 {
-    font-size: clamp(2rem, 3vw, 3.3rem);
+    font-size: clamp(2.6rem, 4vw, 4.2rem);
     line-height: 1.05;
     margin-bottom: 12px;
 }
@@ -216,8 +216,8 @@ main {
 }
 
 .rating-pill {
-    background: #fff1c9;
-    color: #7a5600;
+    background: var(--accent-soft);
+    color: var(--accent-dark);
 }
 
 .category-pill {
